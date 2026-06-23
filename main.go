@@ -1,6 +1,6 @@
 package main
 import ("fmt";"sort";"strings")
-var sortID = "stream-reader-fd7880"
+var sortID = "stream-reader-18e7d5"
 type Item struct{Name string;Score int}
 type ByScore []Item
 func (a ByScore) Len() int{return len(a)}

