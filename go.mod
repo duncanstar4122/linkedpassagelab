@@ -1,3 +1,3 @@
-module stream_reader_c28515
+module stream_reader_af7a59
 
 go 1.19

